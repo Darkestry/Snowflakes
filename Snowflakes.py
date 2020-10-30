@@ -31,42 +31,21 @@ def branch():
 #create one branch of the snowflake by using while-loops:
 
 def whilebranch():
-    x = 0
-    while(x < 3):
-        x += 1
-        elsa.forward(30)
-        elsa.backward(30)
-        elsa.right(45)
-    x = 0
-    while(x < 1):
-        elsa.left(90)
-        elsa.backward(30)
-        elsa.left(45)
-        x += 1
-    x = 0
-    while (x < 3):
-        elsa.forward(30)
-        elsa.backward(30)
-        elsa.right(45)
-        x += 1
-    x = 0
-    while (x < 1):
-        elsa.left(90)
-        elsa.backward(30)
-        elsa.left(45)
-        x += 1
-    x = 0
-    while (x < 3):
-        elsa.forward(30)
-        elsa.backward(30)
-        elsa.right(45)
-        x += 1
-    x = 0
-    while (x < 1):
-        elsa.left(90)
-        elsa.backward(30)
-        elsa.left(45)
-        x += 1
+    y = 0
+    while (y < 3):
+        x = 0
+        while(x < 3):
+            elsa.forward(30)
+            elsa.backward(30)
+            elsa.right(45)
+            x += 1
+        x = 0
+        while(x < 1):
+            elsa.left(90)
+            elsa.backward(30)
+            elsa.left(45)
+            x += 1
+        y += 1
     elsa.right(90)
     elsa.forward(90)
 
