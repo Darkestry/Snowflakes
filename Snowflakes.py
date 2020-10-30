@@ -70,17 +70,22 @@ def whilebranch():
     elsa.right(90)
     elsa.forward(90)
 
-#draw branch 8 times
-#for i in range(8):
-#    whilebranch()
-#    elsa.color(random.choice(colours))
-#    elsa.left(45)
-x = 0
-while(x < 8):
-    whilebranch()
-    elsa.color(random.choice(colours))
-    elsa.left(45)
-    x += 1
+#draw branch 8 times with for-loop:
+def draw_forloop():
+    for i in range(8):
+        branch()
+        elsa.color(random.choice(colours))
+        elsa.left(45)
 
+#draw branch 8 times with while-loop:
+def draw_whileloop():
+    x = 0
+    while(x < 8):
+        whilebranch()
+        elsa.color(random.choice(colours))
+        elsa.left(45)
+        x += 1
+
+draw_whileloop()
 
 turtle.Screen().exitonclick()
